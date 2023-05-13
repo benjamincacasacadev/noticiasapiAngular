@@ -9,7 +9,7 @@ export class FormularioComponent {
   @Output() parametrosSeleccionados = new EventEmitter<any>();
 
   categoriaSeleccionada = 'general';
-  paisSeleccionado = 'bo';
+  paisSeleccionado = 'us';
 
   categorias: any[] = [
     {value: 'general', nombre: 'General'},
@@ -22,6 +22,7 @@ export class FormularioComponent {
   ];
 
   paises: any[] = [
+    { value: 'us', nombre: 'Estados Unidos'},
     { value: 'ar', nombre: 'Argentina'},
     { value: 'bo', nombre: 'Bolivia'},
     { value: 'br', nombre: 'Brasil'},

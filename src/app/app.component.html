@@ -2,3 +2,7 @@
 <div class="container">
   <app-formulario (parametrosSeleccionados)="buscarNoticias($event)"></app-formulario>
 </div>
+
+<div class="container">
+  <app-listado-noticias [listNoticias]="listNoticias"></app-listado-noticias>
+</div>
