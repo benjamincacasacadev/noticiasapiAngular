@@ -1,0 +1,14 @@
+<h1 class="text-center">Ultimas noticias</h1><br>
+<div class="row row-cols-1 row-cols-md-5" style="font-family: Kanit !important">
+    <div *ngFor="let noticia of listGeneralNoticias" class="col mb-4">
+        <div class="card">
+            <img [src]="noticia.urlToImage || 'https://guwahatiplus.com/public/web/images/default-news.png'" class="card-img-top" alt="..." style="height:250px">
+            <div class="card-body">
+                <span class="badge bg-success text-white mb-1">{{ noticia.source.name }}</span>
+                <h5 class="card-title">{{ noticia.title }}</h5>
+                <p class="card-text">{{noticia.descrption}}</p>
+                <a [href]="noticia.url" target="_blank">Ver mas...</a>
+            </div>
+        </div>
+    </div>
+</div>

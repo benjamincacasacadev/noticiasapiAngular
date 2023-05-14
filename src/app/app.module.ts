@@ -9,6 +9,8 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { ListadoNoticiasComponent } from './components/listado-noticias/listado-noticias.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { NewsapiservicesService } from './services/newsapiservices.service';
+import { ListadoGeneralComponent } from './components/listado-general/listado-general.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
     ListadoNoticiasComponent,
     NavbarComponent,
     SpinnerComponent,
+    ListadoGeneralComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,7 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [NewsapiservicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
