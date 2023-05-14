@@ -12,7 +12,13 @@ export class NoticiaService {
   getNoticias(parametros: any): Observable<any>{
     console.log("PAIS "+parametros.pais);
     console.log("CATE "+parametros.categoria);
-    const URL = 'https://newsapi.org/v2/top-headlines?country='+parametros.pais+'&category='+parametros.categoria+'&apiKey=cf51f1ecc7f44aa78cf49910509cb1ec';
+    const URL = 'https://newsapi.org/v2/top-headlines?country='+parametros.pais+'&category='+parametros.categoria+'&apiKey=c838fed29d5d4304b39cc9bdbfa719b8';
+    return this.http.get(URL);
+  }
+
+  getNoticiasDate(parametros: any): Observable<any>{
+    console.log("FECHA "+parametros.fecha);
+    const URL = 'https://newsapi.org/v2/everything?q=a&from='+parametros.fecha+'&to='+parametros.fecha+'&apiKey=c838fed29d5d4304b39cc9bdbfa719b8';
     return this.http.get(URL);
   }
 }

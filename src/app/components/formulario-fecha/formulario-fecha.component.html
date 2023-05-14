@@ -1,0 +1,19 @@
+<div class="jumbotron mt-3">
+    <h3 class="heading">Buscar por fecha</h3>
+    <form (ngSubmit)="buscarNoticiaDate()">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="form-label mt-4">Fecha</label><br>
+                    <input type="date" class="form-control" [(ngModel)]="fechaSeleccionada" name="fechaSeleccionada">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <label class="form-label mt-4" style="color:transparent">a</label>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block btn-lg">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

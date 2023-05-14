@@ -13,6 +13,8 @@ import { NewsapiservicesService } from './services/newsapiservices.service';
 import { ListadoGeneralComponent } from './components/listado-general/listado-general.component';
 import { TechnewsComponent } from './components/technews/technews.component';
 import { SportsnewsComponent } from './components/sportsnews/sportsnews.component';
+import { BuscarfechaComponent } from './components/buscarfecha/buscarfecha.component';
+import { FormularioFechaComponent } from './components/formulario-fecha/formulario-fecha.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { SportsnewsComponent } from './components/sportsnews/sportsnews.componen
     ListadoGeneralComponent,
     TechnewsComponent,
     SportsnewsComponent,
+    BuscarfechaComponent,
+    FormularioFechaComponent,
   ],
   imports: [
     BrowserModule,

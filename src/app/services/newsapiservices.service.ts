@@ -11,17 +11,17 @@ export class NewsapiservicesService {
   }
 
   getAllNoticias(): Observable<any>{
-    const URL = 'https://newsapi.org/v2/top-headlines?pageSize=40&language=en&sortBy=popularity&apiKey=cf51f1ecc7f44aa78cf49910509cb1ec';
+    const URL = 'https://newsapi.org/v2/top-headlines?pageSize=20&language=en&sortBy=popularity&apiKey=c838fed29d5d4304b39cc9bdbfa719b8';
     return this.http.get(URL);
   }
 
   getTechNoticias(): Observable<any>{
-    const URL = 'https://newsapi.org/v2/top-headlines?pageSize=40&language=en&category=technology&sortBy=popularity&apiKey=cf51f1ecc7f44aa78cf49910509cb1ec';
+    const URL = 'https://newsapi.org/v2/top-headlines?pageSize=20&language=en&category=technology&sortBy=popularity&apiKey=c838fed29d5d4304b39cc9bdbfa719b8';
     return this.http.get(URL);
   }
 
   getSportsNoticias(): Observable<any>{
-    const URL = 'https://newsapi.org/v2/top-headlines?pageSize=40&category=sports&sortBy=popularity&apiKey=cf51f1ecc7f44aa78cf49910509cb1ec';
+    const URL = 'https://newsapi.org/v2/top-headlines?pageSize=20&category=sports&sortBy=popularity&apiKey=c838fed29d5d4304b39cc9bdbfa719b8';
     return this.http.get(URL);
   }
 }
