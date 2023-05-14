@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { NewsapiservicesService } from './services/newsapiservices.service';
 import { ListadoGeneralComponent } from './components/listado-general/listado-general.component';
+import { TechnewsComponent } from './technews/technews.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ListadoGeneralComponent } from './components/listado-general/listado-ge
     NavbarComponent,
     SpinnerComponent,
     ListadoGeneralComponent,
+    TechnewsComponent,
   ],
   imports: [
     BrowserModule,
