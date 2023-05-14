@@ -8,7 +8,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class FormularioFechaComponent {
   @Output() parametrosSeleccionados = new EventEmitter<any>();
 
-  fechaSeleccionada = new Date().toISOString().slice(0, 10);
+  fechaSeleccionada = new Date("2022-05-04").toISOString().slice(0, 10);
 
   buscarNoticiaDate(){
     console.log(this.fechaSeleccionada);

@@ -2,7 +2,7 @@
     <app-formulario-fecha (parametrosSeleccionados)="buscarNoticiasDate($event)"></app-formulario-fecha>
 </div>
 
-<div class="row row-cols-1 row-cols-md-3" style="font-family: Kanit">
+<!-- <div class="row row-cols-1 row-cols-md-3" style="font-family: Kanit">
     <div *ngFor="let noticia of listNoticiasArray" class="col mb-4">
         <div class="card">
             <img [src]="noticia.urlToImage || 'https://guwahatiplus.com/public/web/images/default-news.png'" class="card-img-top" alt="..." style="height:250px">
@@ -16,9 +16,23 @@
             </div>
         </div>
     </div>
-    <!-- <div class="container">
-        <div *ngIf="listNoticiasArray || noneValue == 0" class="text-center text-italic text-lg">
-            Sin resultados
+</div> -->
+
+
+<div class="row" style="font-family: Kanit">
+    <div *ngFor="let noticia of listNoticiasArray" class="mb-4">
+        <div *ngIf="fechaActual == (noticia.publishedAt | date: 'yyyy-MM-dd')" class="col-lg-4">
+            <div class="card" style="width:320px !important">
+                <img [src]="noticia.urlToImage || 'https://guwahatiplus.com/public/web/images/default-news.png'" class="card-img-top" alt="..." style="height:250px">
+                <div class="card-body" style="width:100%">
+                    <span class="badge bg-info text-white mb-1">{{ noticia.source.name }}</span>
+                    <p class="card-text text-info"><b>FECHA DE PUBLICACIÓN: </b> {{noticia.publishedAt | date:'dd/MM/yyyy'}}</p>
+
+                    <h5 class="card-title">{{ noticia.title }}</h5>
+                    <p class="card-text">{{noticia.descrption}}</p>
+                    <a [href]="noticia.url" target="_blank">Ver mas...</a>
+                </div>
+            </div>
         </div>
-    </div> -->
+    </div>
 </div>

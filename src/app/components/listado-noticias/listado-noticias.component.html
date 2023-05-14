@@ -8,7 +8,7 @@
             <img [src]="noticia.urlToImage || 'https://guwahatiplus.com/public/web/images/default-news.png'" class="card-img-top" alt="..." style="height:250px">
             <div class="card-body">
                 <span class="badge bg-info text-white mb-1">{{ noticia.source.name }}</span>
-
+                <p class="card-text text-info"><b>FECHA DE PUBLICACIÓN: </b> {{noticia.publishedAt | date:'dd/MM/yyyy'}}</p>
                 <h5 class="card-title">{{ noticia.title }}</h5>
                 <p class="card-text">{{noticia.descrption}}</p>
                 <a [href]="noticia.url" target="_blank">Ver mas...</a>

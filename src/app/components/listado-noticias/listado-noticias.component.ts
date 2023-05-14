@@ -17,11 +17,7 @@ export class ListadoNoticiasComponent {
   }
 
   buscarNoticias(parametros: any){
-    console.log("PADRE");
-    // console.log(parametros.categoria);
-    // console.log(parametros.pais);
     this._noticiaService.getNoticias(parametros).subscribe(data => {
-      console.log(data);
       this.listNoticiasArray = data.articles;
     }, error =>{
       console.log(error);

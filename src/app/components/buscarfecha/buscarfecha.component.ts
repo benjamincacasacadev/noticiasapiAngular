@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { pipe } from 'rxjs';
 import { NoticiaService } from 'src/app/services/noticia.service';
 
 @Component({
@@ -11,23 +12,22 @@ export class BuscarfechaComponent {
 
   title = 'proyecto_noticias';
   listNoticiasArray: any[] = [];
-  noneValue: number = 0;
+  listNoticiasArrayFinal: any[] = [];
+  fechaActual: any;
 
   constructor(private _noticiaService: NoticiaService){
 
   }
 
   buscarNoticiasDate(parametros: any){
+
     console.log(parametros);
-    // console.log(parametros.categoria);
-    // console.log(parametros.pais);
     this._noticiaService.getNoticiasDate(parametros).subscribe(data => {
-      console.log(data);
-      this.listNoticiasArray = data.articles;
+        this.listNoticiasArray = data.articles;
+
     }, error =>{
       console.log(error);
     });
-
-    this.noneValue = this.listNoticiasArray.length;
+    this.fechaActual = parametros.fecha;
   }
 }
