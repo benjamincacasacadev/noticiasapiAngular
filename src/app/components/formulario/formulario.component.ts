@@ -23,10 +23,11 @@ export class FormularioComponent {
 
   paises: any[] = [
     { value: 'us', nombre: 'Estados Unidos'},
-    { value: 'ar', nombre: 'Argentina'},
-    { value: 'bo', nombre: 'Bolivia'},
-    { value: 'br', nombre: 'Brasil'},
+    { value: 'in', nombre: 'India'},
+    { value: 'au', nombre: 'Australia'},
+    { value: 'ru', nombre: 'Rusia'},
     { value: 'fr', nombre: 'Francia'},
+    { value: 'gb', nombre: 'Reino Unido'},
   ];
 
   buscarNoticia(){

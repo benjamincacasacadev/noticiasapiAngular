@@ -12,7 +12,8 @@ export class NoticiaService {
   getNoticias(parametros: any): Observable<any>{
     console.log("PAIS "+parametros.pais);
     console.log("CATE "+parametros.categoria);
-    const URL = 'https://newsapi.org/v2/top-headlines?country='+parametros.pais+'&category='+parametros.categoria+'&apiKey=c838fed29d5d4304b39cc9bdbfa719b8';
+    // const URL = 'https://newsapi.org/v2/top-headlines?country='+parametros.pais+'&category='+parametros.categoria+'&apiKey=c838fed29d5d4304b39cc9bdbfa719b8';
+    const URL = 'https://saurav.tech/NewsAPI/top-headlines/category/'+parametros.categoria+'/'+parametros.pais+'.json';
     return this.http.get(URL);
   }
 
