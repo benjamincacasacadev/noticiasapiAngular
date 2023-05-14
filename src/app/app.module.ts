@@ -12,6 +12,7 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { NewsapiservicesService } from './services/newsapiservices.service';
 import { ListadoGeneralComponent } from './components/listado-general/listado-general.component';
 import { TechnewsComponent } from './components/technews/technews.component';
+import { SportsnewsComponent } from './components/sportsnews/sportsnews.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TechnewsComponent } from './components/technews/technews.component';
     SpinnerComponent,
     ListadoGeneralComponent,
     TechnewsComponent,
+    SportsnewsComponent,
   ],
   imports: [
     BrowserModule,

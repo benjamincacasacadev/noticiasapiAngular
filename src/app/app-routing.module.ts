@@ -4,10 +4,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ListadoGeneralComponent } from './components/listado-general/listado-general.component';
 import { ListadoNoticiasComponent } from './components/listado-noticias/listado-noticias.component';
 import { TechnewsComponent } from './components/technews/technews.component';
+import { SportsnewsComponent } from './components/sportsnews/sportsnews.component';
 
 const routes: Routes = [
   {path: '', component: ListadoGeneralComponent}, // home
   {path: 'tech', component: TechnewsComponent}, // tech
+  {path: 'sports', component: SportsnewsComponent}, // tech
   {path: 'search', component: ListadoNoticiasComponent} // tech
 ];
 
