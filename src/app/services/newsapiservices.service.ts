@@ -14,4 +14,9 @@ export class NewsapiservicesService {
     const URL = 'https://newsapi.org/v2/top-headlines?pageSize=40&language=en&from=2023-05-12&to=2023-05-13&sortBy=popularity&apiKey=cf51f1ecc7f44aa78cf49910509cb1ec';
     return this.http.get(URL);
   }
+
+  getTechNoticias(): Observable<any>{
+    const URL = 'https://newsapi.org/v2/top-headlines?pageSize=40&language=en&category=technology&sortBy=popularity&apiKey=cf51f1ecc7f44aa78cf49910509cb1ec';
+    return this.http.get(URL);
+  }
 }
