@@ -7,7 +7,7 @@
         <div class="card">
             <img [src]="noticia.urlToImage || 'https://guwahatiplus.com/public/web/images/default-news.png'" class="card-img-top" alt="..." style="height:250px">
             <div class="card-body">
-                <span class="badge bg-info text-white mb-1">{{ noticia.source.name }}</span>
+                <span class="badge bg-warning text-white mb-1">{{ noticia.source.name }}</span>
                 <p class="card-text"><b>FECHA DE PUBLICACIÓN: </b> {{noticia.publishedAt | date:'dd/MM/yyyy'}}</p>
 
                 <h5 class="card-title">{{ noticia.title }}</h5>
@@ -25,8 +25,8 @@
             <div class="card" style="width:320px !important">
                 <img [src]="noticia.urlToImage || 'https://guwahatiplus.com/public/web/images/default-news.png'" class="card-img-top" alt="..." style="height:250px">
                 <div class="card-body" style="width:100%">
-                    <span class="badge bg-info text-white mb-1">{{ noticia.source.name }}</span>
-                    <p class="card-text text-info"><b>FECHA DE PUBLICACIÓN: </b> {{noticia.publishedAt | date:'dd/MM/yyyy'}}</p>
+                    <span class="badge bg-warning text-white mb-1">{{ noticia.source.name }}</span>
+                    <p class="card-text text-warning"><b>FECHA DE PUBLICACIÓN: </b> {{noticia.publishedAt | date:'dd/MM/yyyy'}}</p>
 
                     <h5 class="card-title">{{ noticia.title }}</h5>
                     <p class="card-text">{{noticia.descrption}}</p>

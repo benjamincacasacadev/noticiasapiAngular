@@ -4,7 +4,7 @@
         <div class="card">
             <img [src]="noticia.urlToImage || 'https://guwahatiplus.com/public/web/images/default-news.png'"  class="card-img-top" alt="..." style="height:250px">
             <div class="card-body">
-                <span class="badge bg-success text-white mb-1">{{ noticia.source.name }}</span>
+                <span class="badge bg-danger text-white mb-1 text-lg">{{ noticia.source.name }}</span>
                 <h5 class="card-title">{{ noticia.title }}</h5>
                 <p class="card-text">{{noticia.descrption}}</p>
                 <a [href]="noticia.url" target="_blank">Ver mas...</a>
