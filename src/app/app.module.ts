@@ -17,6 +17,7 @@ import { BuscarfechaComponent } from './components/buscarfecha/buscarfecha.compo
 import { FormularioFechaComponent } from './components/formulario-fecha/formulario-fecha.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductosComponent } from './components/productos/productos.component';
+import { ChartRandomComponent } from './components/chart-random/chart-random.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ProductosComponent } from './components/productos/productos.component';
     FormularioFechaComponent,
     HomeComponent,
     ProductosComponent,
+    ChartRandomComponent,
   ],
   imports: [
     BrowserModule,

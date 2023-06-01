@@ -8,11 +8,12 @@ import { SportsnewsComponent } from './components/sportsnews/sportsnews.componen
 import { BuscarfechaComponent } from './components/buscarfecha/buscarfecha.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductosComponent } from './components/productos/productos.component';
+import { ChartRandomComponent } from './components/chart-random/chart-random.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'products', component: ProductosComponent},
-  {path: 'sports', component: SportsnewsComponent},
+  {path: 'random', component: ChartRandomComponent},
   {path: 'search', component: ListadoNoticiasComponent},
   {path: 'searchDate', component: BuscarfechaComponent},
 ];
