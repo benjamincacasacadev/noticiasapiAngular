@@ -18,6 +18,7 @@ import { FormularioFechaComponent } from './components/formulario-fecha/formular
 import { HomeComponent } from './components/home/home.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { ChartRandomComponent } from './components/chart-random/chart-random.component';
+import { ChartGeneralComponent } from './components/chart-general/chart-general.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ChartRandomComponent } from './components/chart-random/chart-random.com
     HomeComponent,
     ProductosComponent,
     ChartRandomComponent,
+    ChartGeneralComponent,
   ],
   imports: [
     BrowserModule,
