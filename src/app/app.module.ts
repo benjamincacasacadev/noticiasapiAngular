@@ -15,6 +15,7 @@ import { TechnewsComponent } from './components/technews/technews.component';
 import { SportsnewsComponent } from './components/sportsnews/sportsnews.component';
 import { BuscarfechaComponent } from './components/buscarfecha/buscarfecha.component';
 import { FormularioFechaComponent } from './components/formulario-fecha/formulario-fecha.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FormularioFechaComponent } from './components/formulario-fecha/formular
     SportsnewsComponent,
     BuscarfechaComponent,
     FormularioFechaComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
