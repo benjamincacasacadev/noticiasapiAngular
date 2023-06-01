@@ -19,6 +19,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { ChartRandomComponent } from './components/chart-random/chart-random.component';
 import { ChartGeneralComponent } from './components/chart-general/chart-general.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ChartGeneralComponent } from './components/chart-general/chart-general.
     ProductosComponent,
     ChartRandomComponent,
     ChartGeneralComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,

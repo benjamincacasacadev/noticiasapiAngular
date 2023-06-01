@@ -10,13 +10,14 @@ import { HomeComponent } from './components/home/home.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { ChartRandomComponent } from './components/chart-random/chart-random.component';
 import { ChartGeneralComponent } from './components/chart-general/chart-general.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'products', component: ProductosComponent},
   {path: 'random', component: ChartRandomComponent},
   {path: 'charts', component: ChartGeneralComponent},
-  {path: 'searchDate', component: BuscarfechaComponent},
+  {path: 'contact', component: ContactoComponent},
 ];
 
 @NgModule({
